@@ -1,0 +1,32 @@
+{
+  "name": "node-sqlschemify",
+  "version": "0.0.1",
+  "description": "Produce Sequelize models from JSON Schemas",
+  "main": "index.js",
+  "dependencies": {
+    "babel-runtime": "^6.11.6"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.16.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dave-irvine/node-sqlschemify.git"
+  },
+  "keywords": [
+    "sequelize",
+    "json",
+    "schema"
+  ],
+  "author": "Dave Irvine <dave@daveirvine.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dave-irvine/node-sqlschemify/issues"
+  },
+  "homepage": "https://github.com/dave-irvine/node-sqlschemify#readme"
+}
