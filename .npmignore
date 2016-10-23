@@ -1,6 +1,7 @@
 .npmignore
 .idea/
 src/
+test/
 .travis.yml
 .eslintrc
 .babelrc
