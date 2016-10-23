@@ -4,4 +4,32 @@
 sqlschemify
 ====
 
-Produce Sequelize models from JSON Schemas.
+Produce [Sequelize](http://sequelizejs.com) models from [JSON Schemas](http://json-schema.org).
+
+
+#### Installation
+
+    npm install sqlschemify
+    
+#### Requirements
+
+ - SequelizeJS
+
+#### Usage
+
+    var Sequelize = require('sequelize'),
+        SQLSchemify = require('sqlschemify');
+       
+    var schemify = SQLSchemify({
+        Sequelize: Sequelize
+    });
+    
+    var model = schemify.getModelForSchema('path/to/schema');
+
+#### API
+
+###### getModelForSchema(Object schema | String path) : Object model
+
+Pass either a parsed JSON Schema, or a path to a JSON Schema file.
+
+Returns a Sequelize Model.
