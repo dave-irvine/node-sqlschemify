@@ -1,5 +1,5 @@
 {
-  "name": "node-sqlschemify",
+  "name": "sqlschemify",
   "version": "0.0.1",
   "description": "Produce Sequelize models from JSON Schemas",
   "main": "index.js",
