@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Required properties",
+  "description": "A Schema with Required properties",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for an Object",
+      "type": "integer"
+    }
+  },
+  "required": ["id"]
+}

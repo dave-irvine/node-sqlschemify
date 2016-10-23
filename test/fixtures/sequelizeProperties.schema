@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Sequelize Properties",
+  "description": "A Schema with Sequelize Properties",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for an Object",
+      "type": "integer",
+      "sequelize": {
+        "primaryKey": true,
+        "autoIncrement": true
+      }
+    }
+  }
+}
