@@ -17,7 +17,11 @@
     "mocha": "^3.1.2"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register"
+    "preversion": "npm test && npm run build && git diff --exit-code --quiet",
+    "postversion": "git push && git push --tags",
+    "pretest": "eslint src/",
+    "test": "mocha --compilers js:babel-core/register",
+    "build": "babel src --out-dir lib"
   },
   "repository": {
     "type": "git",
