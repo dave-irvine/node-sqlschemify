@@ -3,7 +3,8 @@ var babel = require('babel-core');
 module.exports = function (wallaby) {
     return {
         files: [
-            'src/**/*.js'
+            'src/**/*.js',
+            'test/fixtures/*'
         ],
 
         tests: [
