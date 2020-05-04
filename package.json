@@ -5,7 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "babel-runtime": "^6.11.6",
-    "lodash": "^4.16.4"
+    "lodash": "^4.16.4",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
@@ -21,7 +22,9 @@
     "postversion": "git push && git push --tags",
     "pretest": "eslint src/",
     "test": "mocha --compilers js:babel-core/register",
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -37,5 +40,6 @@
   "bugs": {
     "url": "https://github.com/dave-irvine/node-sqlschemify/issues"
   },
-  "homepage": "https://github.com/dave-irvine/node-sqlschemify#readme"
+  "homepage": "https://github.com/dave-irvine/node-sqlschemify#readme",
+  "snyk": true
 }
